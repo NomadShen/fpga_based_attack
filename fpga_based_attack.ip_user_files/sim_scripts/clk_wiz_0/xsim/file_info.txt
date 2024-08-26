@@ -1,0 +1,3 @@
+clk_wiz_0_clk_wiz.v,verilog,xil_defaultlib,../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,incdir="../../../../aes_tdc.gen/sources_1/bd/jtag2pt/ipshared/c2c6"incdir="../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0"
+clk_wiz_0.v,verilog,xil_defaultlib,../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,incdir="../../../../aes_tdc.gen/sources_1/bd/jtag2pt/ipshared/c2c6"incdir="../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0"
+glbl.v,Verilog,xil_defaultlib,glbl.v

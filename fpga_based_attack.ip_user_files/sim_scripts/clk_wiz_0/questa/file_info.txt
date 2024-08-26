@@ -1,0 +1,6 @@
+xpm_cdc.sv,systemverilog,xpm,C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../aes_tdc.gen/sources_1/bd/jtag2pt/ipshared/c2c6"incdir="../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0"
+xpm_memory.sv,systemverilog,xpm,C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../aes_tdc.gen/sources_1/bd/jtag2pt/ipshared/c2c6"incdir="../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0"
+xpm_VCOMP.vhd,vhdl,xpm,C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../aes_tdc.gen/sources_1/bd/jtag2pt/ipshared/c2c6"incdir="../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0"
+clk_wiz_0_clk_wiz.v,verilog,xil_defaultlib,../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,incdir="../../../../aes_tdc.gen/sources_1/bd/jtag2pt/ipshared/c2c6"incdir="../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0"
+clk_wiz_0.v,verilog,xil_defaultlib,../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,incdir="../../../../aes_tdc.gen/sources_1/bd/jtag2pt/ipshared/c2c6"incdir="../../../../aes_tdc.gen/sources_1/ip/clk_wiz_0"
+glbl.v,Verilog,xil_defaultlib,glbl.v

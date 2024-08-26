@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Thu Apr 18 15:33:16 2024
+# Process ID: 21372
+# Current directory: D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/impl_1
+# Command line: vivado.exe -log tdc.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source tdc.tcl -notrace
+# Log file: D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/impl_1/tdc.vdi
+# Journal file: D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/impl_1\vivado.jou
+# Running On: ITFCWI-4IALQD0U, OS: Windows, CPU Frequency: 1882 MHz, CPU Physical cores: 10, Host memory: 16782 MB
+#-----------------------------------------------------------
+source tdc.tcl -notrace

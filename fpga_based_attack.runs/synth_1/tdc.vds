@@ -1,0 +1,817 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Thu Apr 18 15:30:40 2024
+# Process ID: 3232
+# Current directory: D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1
+# Command line: vivado.exe -log tdc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tdc.tcl
+# Log file: D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/tdc.vds
+# Journal file: D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1\vivado.jou
+# Running On: ITFCWI-4IALQD0U, OS: Windows, CPU Frequency: 1882 MHz, CPU Physical cores: 10, Host memory: 16782 MB
+#-----------------------------------------------------------
+source tdc.tcl -notrace
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 484.488 ; gain = 185.516
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/prj/vivado/ip_repo/aes_reg_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/prj/vivado/ip_repo/axi2pt_1_0'.
+WARNING: [IP_Flow 19-2207] Repository 'd:/prj/vivado/ip_repo/axi2pt_1_0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/prj/vivado/ip_repo/axi2pt_1_0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/prj/vivado/ip_repo/jtag2pt_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/prj/vivado/ip_repo/aes256_key_reg_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/prj/vivado/ip_repo/aes_pt_reg_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+Command: synth_design -top tdc -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20304
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1369.195 ; gain = 437.969
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'clk' is not allowed [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/tdc_src/priority_encoder.v:9]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'data' is not allowed [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/tdc_src/priority_encoder.v:10]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'bin' is not allowed [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/tdc_src/priority_encoder.v:12]
+WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:3]
+WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:4]
+WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:5]
+INFO: [Synth 8-11241] undeclared symbol 'clk_jtag', assumed default net type 'wire' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:71]
+INFO: [Synth 8-11241] undeclared symbol 'rst_n', assumed default net type 'wire' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:112]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:310]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:312]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:345]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:347]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:415]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:450]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:452]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:485]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:487]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:242]
+INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'tdc' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:8]
+INFO: [Synth 8-6157] synthesizing module 'debouncer_trigger' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/others/debouncer_trigger.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer_trigger' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/others/debouncer_trigger.v:18]
+INFO: [Synth 8-6157] synthesizing module 'aes_core' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/aes_test/aes_test.srcs/sources_1/imports/crypto_src/aes_core.v:36]
+INFO: [Synth 8-6157] synthesizing module 'aes_ks' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/aes_test/aes_test.srcs/sources_1/imports/crypto_src/aes_ks.v:36]
+INFO: [Synth 8-6157] synthesizing module 'aes_sbox' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/aes_test/aes_test.srcs/sources_1/imports/crypto_src/aes_sbox.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'aes_sbox' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/aes_test/aes_test.srcs/sources_1/imports/crypto_src/aes_sbox.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/aes_test/aes_test.srcs/sources_1/imports/crypto_src/aes_ks.v:107]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/aes_test/aes_test.srcs/sources_1/imports/crypto_src/aes_ks.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'aes_ks' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/aes_test/aes_test.srcs/sources_1/imports/crypto_src/aes_ks.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/aes_test/aes_test.srcs/sources_1/imports/crypto_src/aes_core.v:272]
+INFO: [Synth 8-6155] done synthesizing module 'aes_core' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/aes_test/aes_test.srcs/sources_1/imports/crypto_src/aes_core.v:36]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73631]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73631]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 339.750000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.050000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 5 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'jtag2pt' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/synth/jtag2pt.v:13]
+INFO: [Synth 8-6157] synthesizing module 'jtag2pt_aes_reg_0_0' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/.Xil/Vivado-3232-ITFCWI-4IALQD0U/realtime/jtag2pt_aes_reg_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'jtag2pt_aes_reg_0_0' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/.Xil/Vivado-3232-ITFCWI-4IALQD0U/realtime/jtag2pt_aes_reg_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'jtag2pt_clk_wiz_0' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/.Xil/Vivado-3232-ITFCWI-4IALQD0U/realtime/jtag2pt_clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'jtag2pt_clk_wiz_0' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/.Xil/Vivado-3232-ITFCWI-4IALQD0U/realtime/jtag2pt_clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'jtag2pt_jtag_axi_0_0' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/.Xil/Vivado-3232-ITFCWI-4IALQD0U/realtime/jtag2pt_jtag_axi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'jtag2pt_jtag_axi_0_0' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/.Xil/Vivado-3232-ITFCWI-4IALQD0U/realtime/jtag2pt_jtag_axi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'jtag2pt_rst_clk_wiz_100M_0' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/.Xil/Vivado-3232-ITFCWI-4IALQD0U/realtime/jtag2pt_rst_clk_wiz_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'jtag2pt_rst_clk_wiz_100M_0' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/.Xil/Vivado-3232-ITFCWI-4IALQD0U/realtime/jtag2pt_rst_clk_wiz_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'jtag2pt_rst_clk_wiz_100M_0' is unconnected for instance 'rst_clk_wiz_100M' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/synth/jtag2pt.v:106]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'jtag2pt_rst_clk_wiz_100M_0' is unconnected for instance 'rst_clk_wiz_100M' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/synth/jtag2pt.v:106]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'jtag2pt_rst_clk_wiz_100M_0' is unconnected for instance 'rst_clk_wiz_100M' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/synth/jtag2pt.v:106]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'jtag2pt_rst_clk_wiz_100M_0' is unconnected for instance 'rst_clk_wiz_100M' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/synth/jtag2pt.v:106]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_100M' of module 'jtag2pt_rst_clk_wiz_100M_0' has 10 connections declared, but only 6 given [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/synth/jtag2pt.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'jtag2pt' (0#1) [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/synth/jtag2pt.v:13]
+INFO: [Synth 8-6157] synthesizing module 'priority_encoder' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/tdc_src/priority_encoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'priority_encoder' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/tdc_src/priority_encoder.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:100]
+INFO: [Synth 8-6157] synthesizing module 'delay_unit' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/delay_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'delay_unit' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/delay_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'tdc_core' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:3]
+	Parameter STAGES bound to: 64 - type: integer 
+	Parameter NUM_INIT_CARRY4 bound to: 213 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:2366]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:2366]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:40992]
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:40992]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_core' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:3]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:117]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/synth/ila_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:2403]
+INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:2403]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:134013]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:134013]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133863]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133863]
+INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133952]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133952]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_14_ila' is unconnected for instance 'inst' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/synth/ila_0.v:3219]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_14_ila' is unconnected for instance 'inst' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/synth/ila_0.v:3219]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_14_ila' is unconnected for instance 'inst' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/synth/ila_0.v:3219]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_14_ila' is unconnected for instance 'inst' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/synth/ila_0.v:3219]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_14_ila' is unconnected for instance 'inst' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/synth/ila_0.v:3219]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_14_ila' is unconnected for instance 'inst' [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/synth/ila_0.v:3219]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_14_ila' has 1033 connections declared, but only 1027 given [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/synth/ila_0.v:3219]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/synth/ila_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tdc' (0#1) [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:8]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity ila_0 does not have driver. [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/synth/ila_0.v:108]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clk_wiz'. This will prevent further optimization [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:64]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila'. This will prevent further optimization [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:117]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'core'. This will prevent further optimization [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:109]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_priority_encoder'. This will prevent further optimization [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:93]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'trigger_0'. This will prevent further optimization [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:32]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'AESGoogleVault'. This will prevent further optimization [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:51]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'jtag2pt_i'. This will prevent further optimization [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:76]
+WARNING: [Synth 8-3848] Net rst_n in module/entity tdc does not have driver. [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc.v:112]
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[265] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[264] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[263] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[262] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[261] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[260] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[259] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[258] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[257] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[256] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[255] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[254] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[253] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[252] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[251] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[250] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[249] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[248] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[247] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[246] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[245] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[244] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[243] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[242] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[241] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[240] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[239] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[238] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[237] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[236] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[235] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[234] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[233] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[232] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[231] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[230] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[229] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[228] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[227] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[226] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[225] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[224] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[223] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[222] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[221] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[220] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[219] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[218] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[217] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[216] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[215] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[214] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[213] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[212] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[211] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[210] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[209] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[208] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[207] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[206] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[205] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[204] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[203] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[202] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[201] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[200] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[199] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[198] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[197] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[196] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[195] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[194] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[193] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[192] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[191] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[190] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[189] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[188] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[187] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[186] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[185] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[184] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[183] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[182] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[181] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[180] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[179] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[178] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[177] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[176] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[175] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[174] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[173] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[172] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[171] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[170] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[169] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[168] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[167] in module blk_mem_gen_v8_4_7_blk_mem_output_block is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:46 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:46 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:46 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.272 . Memory (MB): peak = 1905.191 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 416 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/ip/jtag2pt_jtag_axi_0_0/jtag2pt_jtag_axi_0_0/jtag2pt_jtag_axi_0_0_in_context.xdc] for cell 'jtag2pt_i/jtag_axi_0'
+Finished Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/ip/jtag2pt_jtag_axi_0_0/jtag2pt_jtag_axi_0_0/jtag2pt_jtag_axi_0_0_in_context.xdc] for cell 'jtag2pt_i/jtag_axi_0'
+Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/ip/jtag2pt_clk_wiz_0/jtag2pt_clk_wiz_0/jtag2pt_clk_wiz_0_in_context.xdc] for cell 'jtag2pt_i/clk_wiz'
+Finished Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/ip/jtag2pt_clk_wiz_0/jtag2pt_clk_wiz_0/jtag2pt_clk_wiz_0_in_context.xdc] for cell 'jtag2pt_i/clk_wiz'
+Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/ip/jtag2pt_rst_clk_wiz_100M_0/jtag2pt_rst_clk_wiz_100M_0/jtag2pt_rst_clk_wiz_100M_0_in_context.xdc] for cell 'jtag2pt_i/rst_clk_wiz_100M'
+Finished Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/ip/jtag2pt_rst_clk_wiz_100M_0/jtag2pt_rst_clk_wiz_100M_0/jtag2pt_rst_clk_wiz_100M_0_in_context.xdc] for cell 'jtag2pt_i/rst_clk_wiz_100M'
+Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/ip/jtag2pt_aes_reg_0_0/jtag2pt_aes_reg_0_0/jtag2pt_aes_reg_0_0_in_context.xdc] for cell 'jtag2pt_i/aes_reg_0'
+Finished Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/bd/jtag2pt/ip/jtag2pt_aes_reg_0_0/jtag2pt_aes_reg_0_0/jtag2pt_aes_reg_0_0_in_context.xdc] for cell 'jtag2pt_i/aes_reg_0'
+Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Finished Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz/inst'
+Finished Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz/inst'
+Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz/inst'
+Finished Parsing XDC File [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tdc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tdc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'hold'. [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc:237]
+WARNING: [Vivado 12-584] No ports matched 'en1'. [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc:239]
+WARNING: [Vivado 12-584] No ports matched 'en2'. [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc:240]
+WARNING: [Common 17-346] No IO Banks matched '33' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc:362]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc:362]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc:367]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc:372]
+WARNING: [Common 17-346] No IO Banks matched '13' [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc:375]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc:375]
+Finished Parsing XDC File [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/tdc_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/constraints/zedboard_master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tdc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tdc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tdc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tdc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tdc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tdc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1905.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 165 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 32 instances
+  CFGLUT5 => SRLC32E: 5 instances
+  FDR => FDRE: 128 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 1905.191 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:59 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:59 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for ila/inst. (constraint file  D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/dont_touch.xdc, line 30).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz/inst. (constraint file  D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/dont_touch.xdc, line 40).
+Applied set_property KEEP_HIERARCHY = SOFT for ila. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for jtag2pt_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for jtag2pt_i/jtag_axi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for jtag2pt_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for jtag2pt_i/rst_clk_wiz_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for jtag2pt_i/aes_reg_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:59 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debouncer_trigger'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_3_reg_p2s'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_3_reg_p2s__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_3_reg_p2s__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_1_generic_memrd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE2 |                               10 |                               10
+                 iSTATE0 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'debouncer_trigger'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_3_reg_p2s'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_3_reg_p2s__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_3_reg_p2s__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              RESET_ADDR |                          0000001 |                          0000001
+            REQUEST_READ |                          0000010 |                          0000010
+           WAIT_READ_ACK |                          0000100 |                          0000100
+             OUTPUT_DATA |                          0001000 |                          0001000
+                    IDLE |                          0010000 |                          0010000
+         INCREMENT_BLOCK |                          0100000 |                          0100000
+       INCREMENT_ADDRESS |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_1_generic_memrd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:01:01 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:01:48 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:01:56 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:01:57 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:02:02 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin core:rst_n to constant 0
+WARNING: [Synth 8-3295] tying undriven pin dummy_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[36] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[35] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[34] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[33] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[32] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:75]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.srcs/sources_1/imports/vivado/TDC/TDC.srcs/sources_1/imports/src/tdc_core.v:82]
+INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:02:06 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:02:06 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:02:07 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:02:07 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:02:08 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:02:08 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |jtag2pt_aes_reg_0_0        |         1|
+|2     |jtag2pt_clk_wiz_0          |         1|
+|3     |jtag2pt_jtag_axi_0_0       |         1|
+|4     |jtag2pt_rst_clk_wiz_100M_0 |         1|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |jtag2pt_aes_reg_0        |     1|
+|2     |jtag2pt_clk_wiz          |     1|
+|3     |jtag2pt_jtag_axi_0       |     1|
+|4     |jtag2pt_rst_clk_wiz_100M |     1|
+|5     |BUFG                     |     6|
+|6     |CARRY4                   |   242|
+|7     |CFGLUT5                  |    37|
+|8     |LUT1                     |    30|
+|9     |LUT2                     |   479|
+|10    |LUT3                     |   683|
+|11    |LUT4                     |   786|
+|12    |LUT5                     |  1111|
+|13    |LUT6                     |  2760|
+|14    |MMCME2_ADV               |     1|
+|15    |MUXF7                    |    41|
+|16    |RAM32M                   |    21|
+|17    |RAM32X1D                 |     2|
+|18    |RAMB18E1                 |     1|
+|19    |RAMB36E1                 |     7|
+|20    |SRL16E                   |   269|
+|21    |SRLC16E                  |     2|
+|22    |SRLC32E                  |    17|
+|23    |FDR                      |   128|
+|24    |FDRE                     |  2402|
+|25    |FDSE                     |    11|
+|26    |IBUF                     |     1|
++------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:02:08 . Memory (MB): peak = 1905.191 ; gain = 973.965
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3399 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:02:01 . Memory (MB): peak = 1905.191 ; gain = 973.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:02:08 . Memory (MB): peak = 1905.191 ; gain = 973.965
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 1905.191 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 480 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: ila UUID: 901a5f55-8b29-50a8-8131-f43987f6be78 
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1905.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 188 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 32 instances
+  CFGLUT5 => SRLC32E: 5 instances
+  FDR => FDRE: 128 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 21 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+Synth Design complete | Checksum: bdca6049
+INFO: [Common 17-83] Releasing license: Synthesis
+204 Infos, 278 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:02:15 . Memory (MB): peak = 1905.191 ; gain = 1378.020
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1905.191 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/prj/vivado/aes_tdc_50_50_artix7/aes_tdc.runs/synth_1/tdc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tdc_utilization_synth.rpt -pb tdc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 15:33:08 2024...
