@@ -14,9 +14,9 @@ Or you can use the generated bitstream ".\fpga_based_attack\fpga_based_attack.ru
 
 2. (Optional) To collect the traces from the FPGA, load the bitstream file to the Nexys 4 DDR board and open the ChipScope in the hardware manager. Run the TCL scripts in the "tcl" folder. First, run the gen_plaintext.tcl to generate plaintexts. Then, run the wr_command.tcl for preparation. Finally, run all the other scripts to collect traces for profiling and attacking. This step may take several hours to obtain all the traces.
 
-Or you can use the provided traces in ".\data". You can download fpga_based_attack.zip from 
+Or you can use the provided traces. You can download fpga_based_attack.zip from 
 > https://drive.google.com/drive/folders/18efDK6ManaElS_Ahr0QNvv-5PAdb2wmJ?usp=drive_link
 
-Unzip this file and put all the traces in to the "data" folder.
+Unzip the file and put all the traces into the "data" folder.
 
-3. Run "python anaylze_trace.py" and "python analyze_trace_halfgate.py" in the python folder to analyze the collected traces.
+3. Run "python anaylze_trace.py" and "python analyze_trace_halfgate.py" in the "python" folder to analyze the collected traces.
